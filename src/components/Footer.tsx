@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-blue-50">
-      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full py-8 px-6 md:px-8 lg:px-16 xl:px-36">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex justify-center text-slate-700 sm:justify-start">
             <svg
@@ -25,7 +25,7 @@ export default function Footer() {
             Publish personal project.
           </p>
         </div>
-      </div>
+      </section>
     </footer>
   );
 }

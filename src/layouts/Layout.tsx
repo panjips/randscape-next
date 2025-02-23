@@ -11,7 +11,7 @@ export default function Layout({
 }: LayoutProps) {
   return (
     <section
-      className={`${backgroundColor} w-full px-6 md:px-8 lg:px-16 xl:px-48`}
+      className={`${backgroundColor} w-full px-6 md:px-8 lg:px-16 xl:px-36`}
     >
       {children}
     </section>

@@ -11,7 +11,9 @@ export default function Landing() {
   useEffect(() => {
     const fetchImage = async () => {
       try {
-        const response = await fetch(`${URL_IMAGE}/random?q=landscape`);
+        const response = await fetch(
+          `${URL_IMAGE}/random?q=landscape&cache=true`
+        );
         if (!response.ok) throw new Error("Image failed to load");
         const blob = await response.blob();
         setImageSrc(URL.createObjectURL(blob));
@@ -24,7 +26,7 @@ export default function Landing() {
   }, []);
 
   return (
-    <Layout backgroundColor="bg-blue-50">
+    <Layout backgroundColor="bg-slate-50">
       <div className="flex flex-col md:flex-row-reverse gap-4 md:gap-8 xl:gap-16 items-center py-16 lg:py-24">
         <div className="h-full w-full">
           {isLoading ? (
