@@ -8,7 +8,6 @@ export default function Landing() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [imageSrc, setImageSrc] = useState<string | undefined>(undefined);
 
-  console.log(URL_IMAGE);
   useEffect(() => {
     const fetchImage = async () => {
       try {
